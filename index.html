@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saraswati Puja Poster Generator</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:24px 16px;font-family:Arial,Helvetica,sans-serif;background:#f3f5fa;color:#222}.container{max-width:1050px;margin:auto}h1{text-align:center;margin:0 0 8px;font-size:28px}.subtitle{text-align:center;color:#666;margin:0 0 24px;line-height:1.5}.layout{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:24px;align-items:start}.panel{min-width:0;background:#fff;border-radius:14px;padding:22px;box-shadow:0 5px 22px #14192d12}h2{margin:0 0 18px;font-size:20px}.field{margin-bottom:16px}label{display:block;margin-bottom:7px;font-weight:700;font-size:14px}input{width:100%;padding:12px;border:1px solid #d4d8e2;border-radius:7px;font:inherit}input:focus{outline:2px solid #526cff;outline-offset:1px}.actions{display:flex;gap:10px;margin-top:20px}button{border:0;border-radius:7px;padding:12px 15px;font-weight:700;cursor:pointer}#download{flex:1;background:#2947bd;color:white}#reset{background:#e9ebf2;color:#222}#status,#error{font-size:13px;line-height:1.5;overflow-wrap:anywhere}#status{color:#555;margin:14px 0 0}#error{display:none;color:#a31919;background:#fff0f0;border-radius:6px;padding:10px}.preview{text-align:center}.canvas-wrap{width:100%;max-width:520px;margin:auto;background:#eef0f6;border:1px solid #e1e3ea;border-radius:8px;overflow:hidden}canvas{display:block;width:100%;height:auto}.hint{color:#777;font-size:12px;line-height:1.5;margin:12px 0 0}@media(max-width:760px){.layout{grid-template-columns:1fr}body{padding:18px 12px}.panel{padding:17px}h1{font-size:24px}}
+</style></head>
+<body><main class="container"><h1>Saraswati Puja Poster Generator</h1><p class="subtitle">Add your details, preview your poster, and download a 1080 × 1350 PNG.</p>
+<div class="layout"><section class="panel"><h2>Your Details</h2><form id="form">
+<div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Enter your name" maxlength="80" value="Name"></div>
+<div class="field"><label for="designation">Designation</label><input id="designation" name="designation" type="text" placeholder="Enter your designation" maxlength="100" value="Designation"></div>
+<div class="field"><label for="company">Company Name</label><input id="company" name="company" type="text" placeholder="Enter company name" maxlength="100" value="Company name"></div>
+<div class="actions"><button type="button" id="download">Download PNG</button><button type="button" id="reset">Reset</button></div><p id="status" role="status" aria-live="polite">Edit the fields to personalize the poster.</p><div id="error" role="alert"></div></form></section>
+<section class="panel preview"><h2>Poster Preview</h2><div class="canvas-wrap"><canvas id="poster" width="1080" height="1350" aria-label="Poster preview"></canvas></div><p class="hint">Export size: 1080 × 1350 pixels. No logo upload or white text background.</p></section></div></main><script src="script.js"></script></body></html>

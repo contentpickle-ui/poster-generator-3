@@ -37,9 +37,9 @@
     if (!loaded) return;
     clearError(); ctx.clearRect(0, 0, W, H); ctx.drawImage(template, 0, 0, W, H);
     // Text sits between the two decorative dividers in the supplied artwork.
-    drawText(nameInput.value.trim(), 1165, 29, 700);
-    drawText(designationInput.value.trim(), 1203, 24, 400);
-    drawText(companyInput.value.trim(), 1241, 24, 400);
+    drawText(nameInput.value.trim(), 1130, 29, 700);
+    drawText(designationInput.value.trim(), 1168, 24, 400);
+    drawText(companyInput.value.trim(), 1206, 24, 400);
     status.textContent = "Preview updated.";
   }
   [nameInput, designationInput, companyInput].forEach(input => input.addEventListener("input", render));
